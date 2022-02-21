@@ -19,12 +19,14 @@ window.addEventListener('DOMContentLoaded',function(){
         iterator.style.display = "block";
     }
 });
+
 booBtn.onclick = function(){
     sound.src = ".\\sounds\\boo.mp3";
     image.src = ".\\images\\booing.gif";
     document.body.style.backgroundColor = "Coral";
     sound.play();
 }
+
 applauseBtn.onclick = function(){
     sound.src = ".\\sounds\\applause.mp3";
     image.src = ".\\images\\applause.gif";
