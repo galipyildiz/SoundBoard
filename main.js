@@ -1,4 +1,5 @@
 //play buttons
+const buttons = document.body.getElementsByTagName("button");
 const booBtn = document.getElementById("booSound");
 const applauseBtn = document.getElementById("applauseSound");
 const gaspBtn = document.getElementById("gaspSound");
@@ -12,12 +13,12 @@ const sound = document.getElementById("sound");
 //image
 const image = document.getElementById("image");
 
-document.onload = function(){
-    console.log("test");
-    const buttons = document.body.getElementsByTagName("button");
-    console.log(buttons);
-}
-
+window.addEventListener('DOMContentLoaded',function(){
+    image.style.display = "block";
+    for (const iterator of buttons) {
+        iterator.style.display = "block";
+    }
+});
 booBtn.onclick = function(){
     sound.src = ".\\sounds\\boo.mp3";
     image.src = ".\\images\\booing.gif";
