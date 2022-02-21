@@ -12,6 +12,12 @@ const sound = document.getElementById("sound");
 //image
 const image = document.getElementById("image");
 
+document.onload = function(){
+    console.log("test");
+    const buttons = document.body.getElementsByTagName("button");
+    console.log(buttons);
+}
+
 booBtn.onclick = function(){
     sound.src = ".\\sounds\\boo.mp3";
     image.src = ".\\images\\booing.gif";
